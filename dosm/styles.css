@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    display: flex;
+    justify-content: center; /* Cambio aquí para centrar el contenido */
+    background-color: #333;
+    padding: 10px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+.menu a:hover {
+    background-color: #575757;
+}
+
+.menu .menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.menu .menu-items {
+    display: flex;
+    justify-content: center; /* Cambio aquí para centrar el contenido */
+}
+
+@media (max-width: 600px) {
+    .menu .menu-items {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .menu .menu-toggle {
+        display: block;
+    }
+
+    .menu .menu-items.active {
+        display: flex;
+    }
+}
+
+h5{
+    text-align: center;
+    justify-content: center;
+}
